@@ -243,7 +243,7 @@ for loss in output.losses_distributed:
 
 for acc in output.metrics_distributed["accuracy"]:
       print(f"Accuracy in Round {acc[0]}: {acc[1]}")
-      fl_loss.append(acc[1])
+      fl_accuracy.append(acc[1])
       
 fig = plt.figure()
 ax = plt.axes()
